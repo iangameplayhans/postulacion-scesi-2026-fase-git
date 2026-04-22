@@ -67,3 +67,22 @@ git init
     * esto confirma los cambios 
     * para añadir descripción usar la flag -m
 
+---
+
+## Clase 2
+
+### States y Commits
+
+Los estados de git
+
+* Directorio de trabajo ( Modificado )
+    * Las modificaciones que se hizo en el proyecto sin asegurarlos
+
+* Stage Area ( Preparado )
+
+
+* Repositorio Local ( Confirmado )
+
+
+
+
