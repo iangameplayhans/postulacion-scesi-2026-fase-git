@@ -160,5 +160,80 @@ titulo del commit
 - descripcion
 - mas descripcion
 ```
+---
 
+### Comandos
+
+para ver el estado actual de todos los archivos 
+```
+    git status
+
+```
+
+indica si existe modificación de algún archivo, nuevos archivos o archivos 
+eliminados.
+
+
+para restaurar a un estado antiguo 
+
+```
+
+git restore [archivo]
+
+```
+**Cuidado**
+borra fisicamente los cambios realizados que estan despues del git add
+
+se puede recuperar los archivos eliminados antes de subirlo al stage 
+
+
+para indicar a git que suba al stage los archivos 
+
+```
+
+git add [archivo]
+
+```
+
+en caso de querer volver en este punto se usa
+
+```
+
+git restore --staged [archivo]
+
+```
+
+Quita el archivo del estado del staged, el flag indica que debe buscar
+en los archivos en stage
+
+
+Para confirmar los cambios se usa:
+
+```
+git commit -m "descripción del cambio"
+
+```
+confirma todos los cambios que se encuentran en stage
+
+**PELIGRO**
+Para volver a una confirmación se usa
+Se borra todo el progreso de los cambios
+
+```
+
+git reset --soft HEAD~1
+
+```
+HEAD indica la ultima confirmación que hicimos
+y el ~1 indica 1 confirmación atras
+
+
+
+Para ver las confirmaciones en una sola linea cada confirmación
+```
+
+git log --oneline
+
+```
+---
 
