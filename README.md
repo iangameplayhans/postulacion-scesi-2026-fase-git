@@ -101,4 +101,64 @@ Git cataloga los archivos en:
 Esto solo ocurre si los archivos no fueron ignorados por el .gitignore
 
 
+#### .gitignore
+
+ignora todos los archivos que se mencionen dentro de este archivo
+
+soporta extensiones
+se puede incluir que no se suba directorios
+
+
+
+### BUENAS PRACTICAS
+
+1. ¿Cada cuanto debo hacer un commit?
+
+* commits atómicos
+    * hacer un cambio cuando se modifica la funcionalidad
+    * commits cortos
+
+2. ¿Como escribir un buen mensaje de commit?   
+* debe describir lo que se hizo
+* no usar punto final ni puntos suspensivos
+* con verbos imperativos
+    * add
+    * fix
+    * change
+    * remove
+3. ¿Tamaño del commit?
+
+Usa máximo 50 caracteristicas
+Directo y consiso
+
+
+
+4. Usar un prefijo
+
+feat: feature( nueva característica)
+fix: (arreglar un bug)
+perf:(cambios que mejorar el rendimiento)
+build:(cambios en el sistema de build)
+ci:(cambios en la integración continua)
+    * deployear algo 
+docs: (para cambios en la documentación)
+refactor: (refactorización de codigo)
+style: (cambios de formato)
+test: para test
+
+
+5. Añade todo el contexto que es necesario 
+
+```
+git commit
+
+```
+escribiendo este comando se abrira el editor de texto
+```
+titulo del commit
+
+- descripcion
+- mas descripcion
+```
+
 
