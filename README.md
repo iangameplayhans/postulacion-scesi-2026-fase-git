@@ -83,6 +83,22 @@ Los estados de git
 
 * Repositorio Local ( Confirmado )
 
+### Diagrama del flujo de trabajo
+
+el flujo de trabajo es
+
+![flujo de trabajo git](/Imagenes/clase_2_imagenes/flujo_trabajo_git.png)
+
+#### Directorio de Trabajo
+
+Git cataloga los archivos en:
+* **untracked**
+    * que son archivos nuevos que git no tieneen su historial
+* **modified**
+    * cuando git detecta un cambio en los archivos que ya tiene en su historial
+
+
+Esto solo ocurre si los archivos no fueron ignorados por el .gitignore
 
 
 
