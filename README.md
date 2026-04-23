@@ -237,3 +237,23 @@ git log --oneline
 ```
 ---
 
+
+## Clase 3
+
+### Github
+
+¿Qué es github?
+
+Es una plataforma en la nube donde los desarrolladores pueden alojar, gestionar y colaborar en proyectos utilizando git
+
+Git vs Github
+
+* Git
+    * Es el sistema de control de versiones de
+versiones
+
+* Github
+    * Es el servidor donde las versiones se almacenan
+    * Github usa git
+    * Git != Github
+
