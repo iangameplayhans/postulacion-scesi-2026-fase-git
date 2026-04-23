@@ -320,3 +320,24 @@ git push -u origin main
 /* Minimamente debiste hacer un commit*/
 
 ```
+
+### Clonar un repositorio
+
+```
+git clone "git@github.com:TuUser/TuRepo.git"
+
+/*Si el repo se hizo con  HTTPS */
+
+git clone "https://github.com/TuUser/TuRepo.git"
+
+/* Comando para cambiar el puntero de github
+y no pida autenticación 
+Sirve para cambiar la conección remota al cual el repo esta conectado*/
+
+git remote set-url origin "git@github.com:TuUser/TuRepo.git"
+
+/* para ver a que repositorio remoto esta conectado
+
+git remote -v
+
+```
