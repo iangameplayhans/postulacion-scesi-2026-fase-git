@@ -265,3 +265,34 @@ cada vez
 * SSH
     1. Configuramos nuestr PC ssh para comunicarse con github mediante una key.
     2. La key creada se pone en github para que no pida las credenciales.
+
+### Configuración SSH
+
+* En windows abre git bash
+* En linux abre la terminal
+
+ejecutamos el siguiente comando
+
+```
+
+ssh-keygen -t ed25519 -C "tuCorreoDeGithub@email.com"
+
+cat ~/.ssh/id_ed25519.pub
+
+/* Copias el resultado del comando
+
+dirigete a github
+perfil>setting>SSH y GPG keys
+
+aquí darle click a "New SSH Key"
+pegas la key que copiaste
+le das un nombre para identificar la pc
+click en "add ssh key"
+*/
+
+ssh -T git@github.com
+/* para verificar la conexión */
+
+
+```
+
