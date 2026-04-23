@@ -296,3 +296,12 @@ ssh -T git@github.com
 
 ```
 
+### Crear un repositorio en github
+
+1. Ve a tu apartado de repositorios
+2. Click en "New"
+3. Ponle un nombre 
+4. Click en "Create Repository"
+
+
+
