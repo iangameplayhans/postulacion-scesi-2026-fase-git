@@ -341,3 +341,27 @@ git remote set-url origin "git@github.com:TuUser/TuRepo.git"
 git remote -v
 
 ```
+
+### Cambios
+
+#### Subir cambios
+
+```
+git push origin <rama>
+
+```
+
+* git push: Empuja los commits locales
+* origin: a donde
+* rama: la rama que se subira los cambios
+
+
+#### Bajar los cambios
+
+```
+git pull origin <rama>
+```
+
+git pull: Trae los commits del servidor
+origin: de que servidor traera los cambios
+<rama>: de que rama se traera los commits
