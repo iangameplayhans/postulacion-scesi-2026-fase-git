@@ -257,3 +257,11 @@ versiones
     * Github usa git
     * Git != Github
 
+### SSH vs HTTPS
+
+* HTTPS
+    * Al clonar un repositorio siempre nos pedira autenticarnos
+cada vez
+* SSH
+    1. Configuramos nuestr PC ssh para comunicarse con github mediante una key.
+    2. La key creada se pone en github para que no pida las credenciales.
