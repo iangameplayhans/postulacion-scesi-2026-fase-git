@@ -304,4 +304,19 @@ ssh -T git@github.com
 4. Click en "Create Repository"
 
 
+### Conectar un repositorio local con github
 
+```
+
+git remote add origin git@github.com:TuUser/TuRepo.git
+
+/* remote es la url que apunta al servidor externo, el repositorio en github
+origin es el apodo que le da al url*/
+
+git branch -M main
+
+git push -u origin main
+
+/* Minimamente debiste hacer un commit*/
+
+```
