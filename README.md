@@ -364,4 +364,4 @@ git pull origin <rama>
 
 git pull: Trae los commits del servidor
 origin: de que servidor traera los cambios
-<rama>: de que rama se traera los commits
+rama: de que rama se traera los commits
