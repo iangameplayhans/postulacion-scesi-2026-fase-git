@@ -365,3 +365,35 @@ git pull origin <rama>
 git pull: Trae los commits del servidor
 origin: de que servidor traera los cambios
 rama: de que rama se traera los commits
+
+
+## Clase 4
+
+### git remote
+
+Este comando permite gestionar las conexiones con los repositorios remotos.
+
+Indica al git local donde consultar y enviar la información.
+
+#### Comandos
+
+Para ver las url donde apunta el repositorio
+
+```
+git remote -v
+```
+
+
+Para vincular el repositorio local en la nube
+
+*generalmente el apodo se coloca como origin 
+
+```
+git remote add <apodo> "url"
+```
+
+Para cambiar la url donde apunta el repositorio
+
+```
+git remote set-url <apodo> "url"
+```
