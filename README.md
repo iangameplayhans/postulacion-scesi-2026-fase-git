@@ -20,7 +20,7 @@ Linus Torvalds lo creó por necesidad ya que se enojo jsjsjs
 descargar e instalar el ejecutable proporcionado por git
 
 #### Linux
-1. por navegador
+1. pornavegador
 2. ir a git-scm.com o buscar git download
 3. buscar comando de instalación
 4. ejecutar en terminal
@@ -397,3 +397,60 @@ Para cambiar la url donde apunta el repositorio
 ```
 git remote set-url <apodo> "url"
 ```
+
+
+### Multiples SSH
+
+Si se necesita varias llaves ssh para que distintos usuarios trabajen en una pc con github se puede configurar esto
+
+#### Configurar
+
+Generamos la ssh key con otro nombre
+
+```
+
+ssh-keygen -t ed25519 -C "tuOtroCorreoDeGithub@gmail.com" -f ~/.ssh/id_miOtroName
+
+```
+```
+```
+
+la flag -f pide el nombre de la key 
+
+Ahora creammos el archivo config en /.ssh 
+para que las keys sepan gestionar
+
+colocamos lo siguiente en el archivo config
+
+
+```txt
+#Cuenta Personal
+Host github.com
+ HostName github.com
+ User git
+ IdentityFile ~/.ssh/id_ed25519
+# Cuenta del otro correo
+Host github-namekey
+ HostName github.com
+ User git
+ IdentityFile ~/.ssh/namekey
+```
+
+
+* Host
+  * Apodo o alias 
+  * la terminal lo colocara como git@Apodo
+* HostName
+  * Dirección real del servidor a conectarse
+* User
+  * Es el nombre de usuario del sistema remoto
+  * En github siempre es git 
+* IdentityFile
+  * Ruta donde esta la key del host específico
+
+
+Como ultimo para verificar si funciona
+
+
+
+
