@@ -451,6 +451,27 @@ Host github-namekey
 
 Como ultimo para verificar si funciona
 
+ ```
+ssh -T git@github-namekey
+```
 
+
+### Configuraciones locales
+
+Estas configuraciones prevalecen para cada repositorio en el que se le configuraciones
+
+los comandos para cambiar el usuario y el email localmente son:
+
+```
+git congif user.name "Nuevo name"
+git config user.email "tuOtroCorreoDeGithub@gmail.com"
+
+```
+
+Al hacer esto el clonado del repositorio con ssh cambia 
+
+```
+git clone git@github-namekey:usuario/repo.git
+```
 
 
