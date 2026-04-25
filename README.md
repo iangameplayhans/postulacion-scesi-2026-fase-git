@@ -475,3 +475,51 @@ git clone git@github-namekey:usuario/repo.git
 ```
 
 
+### Git Checkout
+
+Este comando permite desplazar el HEAD
+(a que commit se esta apuntando ) hacia un punto del historial o a una rama distintos
+
+Se usa para:
+* Inspeccionar
+* Restaurar
+* Experimentar
+* Cambiar de una rama a otra
+
+#### Estado "Detached HEAD"
+
+Cuando hacemos el checkout para movernos entre los commits el estado cambia a un estado desacoplado
+En este estado:
+* Solo eres espectador
+* Puedes ver y escribir notas pero no perteneces a ninguna rama
+* Si vuelves al commit mas actual sin guardar los cambios en una rama se perderan ya que no habra forma de acceder a estos commits
+
+#### Como ir y volver de un commit
+
+Para ir un commit 
+```
+git checkout <hash_commit_destino>
+```
+
+Para volver al ultimo commit de la rama
+
+```
+git checkout <rama>
+```
+
+Si hiciste alguna modificación
+debes de hacer para guardar.
+
+```
+git checkout <hash_commit_creado>
+git checkout -b rama_nueva
+```
+
+#### Buenas prácticas
+
+* No trabajes mucho tiempo en "Detached HEAD"
+  * si vas a modificar mas de dos lineas mejor crea una rama nueva
+* Limpia tu directorio de trabajo
+  * Antes de moverte entre commits asegurate de hacer commit de los cambios actuales, si no no podras viajar
+* Usalo para aprender
+  * Hacer el checkout en proyectos grandes es la mejor forma de como fue creandose.
