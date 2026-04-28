@@ -531,3 +531,29 @@ de codigo.
 
 Se trata de una bifurcación del estado
 del código para poder trabajar en paralelo
+
+#### Comandos
+
+##### Git Branch
+
+Para listar las ramas que existen en el proyecto se usa:
+
+```git
+git branch
+```
+
+Para poder crear una rama
+
+```git
+git branch <nombreRama>
+```
+
+Para eliminar una rama
+
+```git
+git branch <nombreRama>
+```
+
+```git
+git branch -D <nombreRama>
+```
