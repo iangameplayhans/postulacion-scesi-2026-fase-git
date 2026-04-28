@@ -27,7 +27,7 @@ descargar e instalar el ejecutable proporcionado por git
 3. buscar comando de instalación
 4. ejecutar en terminal
 
-Para verificar que se instalo correctamente
+Para verificarque se instalo correctamente
 
 ```
 git --version
@@ -557,3 +557,24 @@ git branch <nombreRama>
 ```git
 git branch -D <nombreRama>
 ```
+
+##### Git Checkout
+
+Este comando tambien sirve para
+moverse entre ramas.
+Pero se requiere no tener nada en stage o
+untracked/modify
+
+Para cambiar de rama se usa:
+
+```git
+git checkout <rama>
+```
+
+Si se quiere crear una rama se usa:
+
+```git
+git checkout -b <rama>
+```
+
+este comando tambien nos movera a esa rama
