@@ -126,6 +126,7 @@ se puede incluir que no se suba directorios
   * fix
   * change
   * remove
+
 1. ¿Tamaño del commit?
 
 Usa máximo 50 caracteristicas
@@ -521,3 +522,12 @@ git checkout -b rama_nueva
 ## Clase 5
 
 ### Ramas y Gitflow básico
+
+#### ¿Qué son las ramas?
+
+Es una de las principales utilidades
+de git para llevar un mejor control
+de codigo.
+
+Se trata de una bifurcación del estado
+del código para poder trabajar en paralelo
