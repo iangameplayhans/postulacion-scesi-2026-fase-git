@@ -585,3 +585,55 @@ Originalmente git checkout tenia varias funcionalidades
 
 Actualmente git switch esta especializado para moverse entre ramas y
 asi evitar errores accidentales que ocurririan con checkout
+
+### Gitflow básico
+
+#### ¿Qué es?
+
+Es un flujo de trabajo para manejar
+de manera ordenada las ramas y tenerlas
+organizadas
+
+#### ¿Cómo funciona?
+
+Se tienen principalmente 2 ramas
+
+* main
+  * Esta rama contendra el código
+  que ya estara en producción
+* develop
+  * Esta rama albergara todas
+  las nuevas funcionalidades del proyecto
+* Ramas de apoyo
+  * Son ramas que permitiran identificar
+  el motivo de algun cambio o añadido que
+  requiera ser una rama
+
+##### Ramas de apoyo
+
+* feature
+  * Esta rama se crea para añadir nuevas
+  caracteristicas
+  * Ejemplo:
+    * feature/*
+    * feature/caracteristica
+    * feature/add-caracteristicas
+    * feature/new-caracteristicas
+* release
+  * En esta rama se preparan las versiones
+  a las que se deben de hacer pruebas
+  * Se crea en develop y se fucionan a develop o a main
+  * Ejemplo:
+    * release/*
+    * release/v1.0.0
+    * release/v2.2.1-beta
+* hotfix
+  * Aqui tienen los cambios improvisados
+  como parches para bugs o problemas
+  en producción
+  * Esta rama nace en main pero se fuciona con main o develop
+  * Ejemplos
+    * hotfix/*
+    * hotfix/login-error
+    * hotfix/fix-database-conection
+    * hotfix/security-patch
