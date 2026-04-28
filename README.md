@@ -521,7 +521,7 @@ git checkout -b rama_nueva
 
 ## Clase 5
 
-### Ramas y Gitflow básico
+### Ramas
 
 #### ¿Qué son las ramas?
 
