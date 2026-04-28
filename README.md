@@ -578,3 +578,10 @@ git checkout -b <rama>
 ```
 
 este comando tambien nos movera a esa rama
+
+##### Git Switch vs Git Checkout
+
+Originalmente git checkout tenia varias funcionalidades
+
+Actualmente git switch esta especializado para moverse entre ramas y
+asi evitar errores accidentales que ocurririan con checkout
