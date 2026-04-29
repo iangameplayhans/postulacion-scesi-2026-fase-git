@@ -637,3 +637,27 @@ Se tienen principalmente 2 ramas
     * hotfix/login-error
     * hotfix/fix-database-conection
     * hotfix/security-patch
+
+## Clase 6
+
+* git merge
+
+  * Este comando permite fusionar una rama a la que estas Actualmente
+pero hay que usar el flag --no-ff esta
+flag evitara que la fusion se haga sin un commit,
+y se podra saber de esta forma que se hizo en este punto
+
+* Qué es git fetch
+
+  * Este comando verifica si existen cambios o no en la rama
+
+* gitit pull
+  * Este comando trae los cambios del repositorio
+  * Generalmente se usa indicando a donde consultar(origin)
+  y de que rama
+
+* git push
+
+  * Sirve para subir los cambios hechos en local hacia el repositorio
+  * generalmente se indica a donde(origin) y de que rama
+  * si es la primera vez subiendo los cambios se usa la flag -u para que no pida permisos para crear las ramas
