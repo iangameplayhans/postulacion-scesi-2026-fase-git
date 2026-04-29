@@ -663,6 +663,35 @@ y se podra saber de esta forma que se hizo en este punto
   * si es la primera vez subiendo los cambios se usa
   la flag -u para que no pida permisos para crear las ramas
 
+### Conflictos
+
+Al momento de traer cambios pueden existir conflictos entre los archivos
+
+Se debe de solucionar manualmente, se abrira un editor de texto para esto.
+
+Para identificar tus cambios en local dentro del archivo se aumentaran dos lineas
+
+```txt
+<<<<<<<<<<<< HEAD 
+some code
+============
+
+>>>>>>>>>>>> name branch merge
+```
+
+Lo que esta entre <<HEAD y la fila de = es lo que tienen en local
+lo que esta hasta abajo de >>>> estara lo que quieres traer del repositorio.
+
+Una vez que hayamos solucionado el conflicto se deben borrar estas secciones
+y al final solo hay que subir los archivos al staged con
+
+```git
+git add
+```
+
+se hace un git status para verificar que no haya mas conflictos, en este caso se hace commit sin la flag -m para que el mensaje original se mantenga
+y no se modifica ya que el commit automatico se mostrara en el editor
+
 ### Flujo de trabajo
 
 Se mencionara el flujo de trabajo sin hacer pull request
