@@ -660,4 +660,25 @@ y se podra saber de esta forma que se hizo en este punto
 
   * Sirve para subir los cambios hechos en local hacia el repositorio
   * generalmente se indica a donde(origin) y de que rama
-  * si es la primera vez subiendo los cambios se usa la flag -u para que no pida permisos para crear las ramas
+  * si es la primera vez subiendo los cambios se usa
+  la flag -u para que no pida permisos para crear las ramas
+
+### Flujo de trabajo
+
+Se mencionara el flujo de trabajo sin hacer pull request
+que es el preferido para github.
+
+Los comandos a ejecutar son los siguientes
+
+```git
+git checkout develop
+git fetch
+git pull origin develop
+git merge --no-ff rama
+#Resolver los conflictos si es que existen
+git add .
+git commit
+git branch -D rama
+git push origin develop
+
+```
