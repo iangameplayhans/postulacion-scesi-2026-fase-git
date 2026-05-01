@@ -831,3 +831,8 @@ En este punto añadir la subregla de
 approvade when new commit pushes"
 para que se deba de aprobar de nuevo si se
 sube cambios de ultimo minuto
+
+==IMPORTANTE==
+==si una persona
+no acepta el cambio no se
+podra realizar el merge==
