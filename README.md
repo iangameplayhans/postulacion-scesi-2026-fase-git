@@ -810,3 +810,24 @@ que los miembros del equipo
 revisen constantemente los cambios que se estan subiendo
 y de esta forma evitar posibles intentos de vulnerar
 el proyecto
+
+### Como proteger el repositorio
+
+Dirigete a
+Setting>Branches>add branch ruleset
+
+aqui debes de activar las reglas.
+
+aqui habra una sección de target branch,
+en estas debes de colocar la rama main y develop
+
+Generalmente en la sección de branch rules
+debes incluir la regla de
+require pull request before merge donde se
+configurara el minimo de aprobaciones
+
+En este punto añadir la subregla de
+"dismiss state pull request
+approvade when new commit pushes"
+para que se deba de aprobar de nuevo si se
+sube cambios de ultimo minuto
