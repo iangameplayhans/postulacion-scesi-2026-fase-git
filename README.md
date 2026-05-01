@@ -711,3 +711,13 @@ git branch -D rama
 git push origin develop
 
 ```
+
+## Clase 7
+
+### Pull request
+
+Informalmente llamados PRs
+
+Es la forma estandar de trabajar en Github,
+la pull request lo que hara es crear un request en el repositorio
+solicitando fusionar una rama con otra del proyecto
