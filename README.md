@@ -89,7 +89,7 @@ Los estados de git
 
 el flujo de trabajo es
 
-![flujo de trabajo git](/Imagenes/clase_2_imagenes/flujo_trabajo_git.png)
+![flujo de trabajo git](./Images/clase_2_images/flujo_trabajo_git.png)
 
 #### Directorio de Trabajo
 
