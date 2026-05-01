@@ -851,3 +851,82 @@ Hay que realizar el fork del repositorio primero.
 Al terminar de hacer el push
 git proporcionara un enlace
 para hacer el pullrequest en Github
+
+## Clase 8
+
+### Eliminar ramas en remoto
+
+Para eliminar las ramas en remoto y que no existan fallas
+en los repositorios locales del grupo se debe de hacer los
+siguientes comandos
+
+```git
+git push origin -d rama
+
+git fetch --prune
+```
+
+El primer comando elimina la rama
+mientras que el segundo lo que hara es limpiar las referencias
+que existian en el repositorio
+
+### Que pasa cuando hay varias PRs
+
+Cuando existen varias pullrequest puede suceder conflictos que
+se han de resolver antes de hacer el merge.
+
+En Github tambien al querer hacer el merge aparece con la opción de eliminar la rama, esto por buenas practicas.
+
+### Stash
+
+Se usa para guardar cambios temporalmente sin tener que hacer un commit
+
+Importante para cuando hay que moverse entre ramas de emergencia.
+
+#### Comandos
+
+Para guardar los cambios que se tienen en stage
+
+```git
+git stash -m "mensaje"
+```
+
+Para listar todos los cambios en stash
+
+```git
+git stash list
+```
+
+Para traer todos los cambios en stash
+
+```git
+git stash pop
+```
+
+### Como ver las diferencias
+
+Se puede ver las diferencias solo con el comando `git diff`
+pero dependiendo de los argumentos que se coloquen mostrara:
+
+* Diferencia entre ramas
+
+```git
+git diff rama rama
+```
+
+* Diferencia entre commits
+
+```git
+git diff Hash1 Hash2
+```
+
+* Diferencia de un archivo
+solo entre untracked y el commit
+
+  * Para indicar entre staged y el commit usar la flag --staged
+
+```git
+git diff archivo
+```
+
+==Hay mas combinaciones pero estos serian los mas usuales ==
