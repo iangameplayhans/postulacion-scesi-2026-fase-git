@@ -721,3 +721,30 @@ Informalmente llamados PRs
 Es la forma estandar de trabajar en Github,
 la pull request lo que hara es crear un request en el repositorio
 solicitando fusionar una rama con otra del proyecto
+
+### Como hacer un pull request
+
+Primeramente debes de subir
+tus cambios con `git pull origin main`
+
+Una vez hecho esto dirigete al
+repositorio en github
+
+Cambiate a la rama que quieres fusionar
+
+Puede aparecer la opción de comparar y hacer pullrequest.
+pero si no aparece
+dale a la opcion de contribute
+que abrira una opcion para hacer pull request
+
+Aquí configuras a donde quieres hacer el merge
+
+Tambien debes de añadir un titulo que es el
+cambio que se hizo como tambien
+una descripción
+
+Al final habra un boton para crear el pull request
+
+en este punto es esperar a que apruben los cambios
+
+Una vez aprobado se puede hacer el merge
