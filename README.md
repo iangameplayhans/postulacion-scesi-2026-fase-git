@@ -802,3 +802,11 @@ git push origin rama
 # Aqui dirigete a github y sigue los pasos del anterior subtitulo
 
 ```
+
+### Porque usar PRs
+
+Con esta formaa se obliga a
+que los miembros del equipo
+revisen constantemente los cambios que se estan subiendo
+y de esta forma evitar posibles intentos de vulnerar
+el proyecto
