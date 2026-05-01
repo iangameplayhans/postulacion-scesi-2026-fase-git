@@ -836,3 +836,18 @@ sube cambios de ultimo minuto
 ==si una persona
 no acepta el cambio no se
 podra realizar el merge==
+
+### Como colaborar a proyectos Open Source
+
+Hay que realizar el fork del repositorio primero.
+
+1. Clonar el repositorio
+2. Crear nueva rama
+3. Realizar el aporte
+4. Crear el commit/commits
+5. Hacer push
+6. Hacer pull request
+
+Al terminar de hacer el push
+git proporcionara un enlace
+para hacer el pullrequest en Github
