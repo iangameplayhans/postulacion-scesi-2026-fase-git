@@ -722,6 +722,24 @@ Es la forma estandar de trabajar en Github,
 la pull request lo que hara es crear un request en el repositorio
 solicitando fusionar una rama con otra del proyecto
 
+### Implementar reglas
+
+Se puede implementar reglas en github para las pull request
+
+Generalmente se implementa en la rama default (main),
+Una regla que pone generalmente
+es que para aprobar una PR, la deben de aprobar
+minimamente la mitad de los miembros mas 1.
+
+Dirigete a
+Settings>Rules>Rulesets
+
+En esta pantalla,haz click al boton de crear nueva ruleset
+y selecciona la opcion de
+new branch ruleset
+
+Aqui configuras las reglas para las pullrequest.
+
 ### Como hacer un pull request
 
 Primeramente debes de subir
