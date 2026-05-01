@@ -766,3 +766,39 @@ Al final habra un boton para crear el pull request
 en este punto es esperar a que apruben los cambios
 
 Una vez aprobado se puede hacer el merge
+
+### Flujo de trabajo (Con pull request)
+
+```git
+git checkout develop
+
+git fetch
+
+git pull origin develop
+
+git checkout rama #-b si se crea rama
+
+git merge develop # solo si hubo cambios en develop
+
+#Trabajar en rama
+git push origin main #-u si es primera vez subiendo al repo
+
+git checkout develop
+
+git fetch
+
+git checkout rama
+
+git merge develop # si hubo cambios en dev y antes de PR
+
+# Resolver conflictos
+
+git add .
+
+git commit # sin modificar el mensaje automatico
+
+git push origin rama
+
+# Aqui dirigete a github y sigue los pasos del anterior subtitulo
+
+```
