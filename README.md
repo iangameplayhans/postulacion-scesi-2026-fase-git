@@ -832,10 +832,11 @@ approvade when new commit pushes"
 para que se deba de aprobar de nuevo si se
 sube cambios de ultimo minuto
 
-==IMPORTANTE==
-==si una persona
+<mark>IMPORTANTE</mark>
+
+<mark>si una persona
 no acepta el cambio no se
-podra realizar el merge==
+podra realizar el merge </mark>
 
 ### Como colaborar a proyectos Open Source
 
@@ -929,4 +930,4 @@ solo entre untracked y el commit
 git diff archivo
 ```
 
-==Hay mas combinaciones pero estos serian los mas usuales ==
+<mark>Hay mas combinaciones pero estos serian los mas usuales </mark>
